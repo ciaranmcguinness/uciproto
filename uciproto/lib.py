@@ -554,13 +554,8 @@ class UCIEngine:
             else:
                 self._send(f"bestmove {best}")
         except Exception as e:
-            # If an exception happens in the search, notify the GUI (debug via stderr) and send a bestmove if possible
-            traceback.print_exc(file=sys.stderr)
-            try:
-                move = next(iter(self.board.legal_moves))
-                self._send(f"bestmove {move.uci()}")
-            except StopIteration:
-                self._send("bestmove (none)")
-
+            #coded into corner, not going to fix scope
+            print(e)
+            exit()
     # Convenience alias
     start = run
