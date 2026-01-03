@@ -1,4 +1,4 @@
-from .py_uci import UCIEngine, SearchFnType, UCIOption
+from .uciproto import UCIEngine, SearchFnType, UCIOption
 """
 pyuci package — simple UCI wrapper for python-chess.
 
