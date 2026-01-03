@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uciproto"
+version = "0.1.0"
+description = "A Python project."
+authors = [
+    { name="Ciaran McGuinness" }
+]
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+dependencies = ["chess"]
+
+[project.urls]
+Homepage = "https://github.com/ciaranmcguinness/uciproto"
+Repository = "https://github.com/ciaranmcguinness/uciproto"
+
+[tool.setuptools]
+packages = ["uciproto"]
